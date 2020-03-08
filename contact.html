@@ -48,17 +48,28 @@
                             <table>
                                 <tr>
                                     <td><label for="fName">First Name: </label></td>
-                                    <td><input type="text" name="fName" id="fName" required><br></td>
+                                    <td><input type="text" name="fName" id="fName" pattern="([a-zA-Z\-]+){3,}\s+([a-zA-Z\-]+){3,}" required><br></td>
                                 </tr>
 
                                 <tr>
                                     <td><label for="lName">Last Name: </label></td>
-                                    <td><input type="text" name="lName" id="lName" required><br></td>
+                                    <td><input type="text" name="lName" id="lName" pattern="([a-zA-Z\-]+){3,}\s+([a-zA-Z\-]+){3,}" required><br></td>
                                 </tr>
+
+                                <tr>
+                                    <td><label for="password">Password: </label></td>
+                                    <td><input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]) . {8,}" required><br></td>
+                                </tr>
+
                                 
                                 <tr>
                                     <td><label for="email">Email: </label></td>
                                     <td><input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+[a-z]{2,}$" required><br></td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td> <label for="bdID">Birthday</label> </td>
+                                    <td> <input type="date" name="birthday"></td>
                                 </tr>
                                 
                                 <tr> 
