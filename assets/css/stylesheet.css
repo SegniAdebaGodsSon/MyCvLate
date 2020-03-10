@@ -8,9 +8,34 @@ nav > ul > li > a {
     
 }
 
+/* Has to be in the following order*/
+
+nav ul li :link{
+    color: rgb(204, 0, 255);
+}
+
+nav ul li :visited{
+    color: rgb(255, 1, 1);
+}
+
+
 nav ul li :hover{
     background-color: rgb(69, 251, 53);
 }
+
+nav ul li :active{
+    color: rgb(191, 0, 216);
+}
+
+
+
+
+/*
+nav ul li a :hover{
+    background-color: rgb(69, 251, 53);
+}
+ a - wont work, you have to make it a block element
+*/
 
 nav ul li {
     display: inline;
@@ -20,14 +45,27 @@ nav ul li {
 body {
     background-color: skyblue;
     color: red;
-    border:solid rgb(14, 18, 246) 5px;
+    /* border:solid rgb(14, 18, 246) 5px; */
     padding: 10px;
     margin: 15px;
 }
 
 header {
-    background-color: rgba(243, 190, 17, 0.4);
     
+    background-color: rgba(243, 190, 17, 0.4);
+
+    /* position: relative;
+    top: 20px;
+    right: 30px; */
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+div {
+    margin-top: 70px;
 }
 
 /*Targetting our blog*/
