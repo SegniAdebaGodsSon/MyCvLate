@@ -20,6 +20,7 @@ nav ul li{
     width: 90%;
 }
 
+
 #header-text{
     border-bottom: solid white 3px; 
     padding-bottom: 40px;
@@ -40,10 +41,6 @@ nav ul li{
     width: 350px;
 }
 
-header{
-    padding-bottom: 40px;
-    border-bottom: solid #FFF 3px;
-}
 
 #hobbies, #work-experience, #top-skills {
     
@@ -58,6 +55,10 @@ header{
 
 footer p {
     text-align: center;
+    border-top: solid #FFF 2px ;
+    border-bottom: solid #FFF 2px ;
+    padding: 20px 0 ;
+
 
 }
 footer div {
