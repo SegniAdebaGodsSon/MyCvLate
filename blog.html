@@ -2,99 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
-
+    <meta name="viewport" content="width=, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./assets/css/stylesheet.css">
-
+    <title>Blog</title>
+    <link rel="stylesheet" href="./css/blogStylesheet.css">
 </head>
 <body>
 
     <header>
-       <nav>
-           <ul>
-            <li><a href="index.html"> Home</a></li> 
-            <li><a href="contact.html"> Contact</a> </li> 
-            <li><a href="gallery.html"> Gallery</a></li>   
-            <li><a href="blog.html"> Blog</a></li>
-            <li><a href="contact2.html"> Contacts2</a></li>   
-           </ul>
-       </nav>
-        
+
     </header>
 
- 
+    <div class="main-container">
 
-
-    <div id="content">
-        
         <section>
-        
-            <p class="title">My First Post</p>
+            <h1>Relative size(%,em,rem) and responsive elements.</h1>
             <article>
-                <p> ipsum dolor sit amet consectetur, adipis
-                icing elit. Blanditiis maxime sequi in nih
-                il, deserunt magnam ipsa sapiente natus mod
-                i animi?</p>
-        
-                <p class="date">March 9,2020 : 2:34 PM</p>
+                <p>It matters to use relative sizes like percentage(%), em and rem to create
+                    responsive elements of a website. It gives it a consistent, non-chaotic, simple
+                    type of look to the end user.
+                </p>
+                <p>
+                    These relative lengths are different from the normal absolute lengths because
+                    Relative length units specify a length relative to another length property. Relative 
+                    length units scales better between different rendering mediums.
+                </p>
+                <p>
+                    But absolute lengths units are fixed and a length expressed in any of these will appear as exactly that size.
+                    Absolute length units are not recommended for use on screen, 
+                    because screen sizes vary so much. However, they can be used 
+                    if the output medium is known, such as for print layout.
+                </p>
+                
+                <p>
+                    Why are they so important to responsive and modern web pages?
+                    the reasons are as mentioned above, the relative lengths consider 
+                    all platforms for the website to be veiwed upon any various types of 
+                    devices with various sizes and resolutions.
+                </p>
+                <p>
+                    Browser capabilities a while ago were tedious, they used to increase the
+                    font sizes of every and each charachters individually but nowadays, zooming
+                    just mostly adjusting the screen to make it more readable but also not lose its looks.
+                </p>
             </article>
-        
-    
+            <p class="publish-date">March 20,2020 : 7:34 PM</p>
         </section>
 
-        <section>
-        
-            <p class="title">My Second Post</p>
-            <article>
-                <p> ipsum dolor sit amet consectetur, adipis
-                icing elit. Blanditiis maxime sequi in nih
-                il, deserunt magnam ipsa sapiente natus mod
-                i animi?</p>
-        
-                <p class="date">March 10,2020 : 3:34 PM</p>
-            </article>
-        
-    
-        </section>
+
+
+
+
+
+
+
 
         <section>
-        
-            <p class="title">My Third Post</p>
+            <h1>Browsers' interprations of pixels above treshold.</h1>
             <article>
-                <p> ipsum dolor sit amet consectetur, adipis
-                icing elit. Blanditiis maxime sequi in nih
-                il, deserunt magnam ipsa sapiente natus mod
-                i animi?</p>
-        
-                <p class="date">March 16,2020 : 10:34 PM</p>
+                <p>
+                    The default font-size for browser's is 16px, if font size
+                    is not given or set the default value will be used.
+                </p>
+                <p>
+                    So what happens when a font-size is set to 200px? How does a browser interprate that?
+                    The browser interprates this as if the shown text of 200 pixels is put, meaning
+                    it looks like its too zoomed in and kind of hard to read, and the browser doesn't care 
+                    about that, it shows it as it is.
+                </p>
+                
             </article>
-        
-    
+            <p class="publish-date">March 20,2020 : 7:34 PM</p>
         </section>
 
+
+
+
+
+        
         <section>
-        
-            <p class="title">My Fourht Post</p>
+            <h1>Changes in CSS3</h1>
             <article>
-                <p> ipsum dolor sit amet consectetur, adipis
-                icing elit. Blanditiis maxime sequi in nih
-                il, deserunt magnam ipsa sapiente natus mod
-                i animi?</p>
-        
-                <p class="date">March 16,2020 : 10:34 PM</p>
+                
+            
+                <div>
+                    <h3>So, what's new with css3?</h3>
+                    CSS3 is the latest standard for the CSS language, under development
+                    since 2005. It's <a href="">backwards-compatible</a> with older versions
+                    of CSS, and has new properties that debug previous quirks and extends
+                    CSS2 features, and it's even got some JavaScript-like capabilities.
+                    CSS3 has also addressed a number of mobile development concerns, accounting
+                    for <a href="">responsive design</a> and making up for issues caused by
+                    Adobe Flash incompabilitiy on mobile devices. In combination with JavaScript, 
+                    CSS3 has a lot of functionality of Flash now-animation- and iteractivity-wise.
+                    <br>
+                    Here are seven major things that differentiate CSS3 from its predecessors.
+                </div>
+                
+                <div>
+                    <h4>1.Mobile-first mentality</h4>
+                    <p>
+                        One of the biggest developments is that CSS3 is split into “modules.” All of the old CSS
+                        specifications have been migrated over to the new version and divided into smaller pieces (with
+                        some new modules added as well).
+                    </p>
+
+                    <h4>2. Module-based code</h4>
+                    <p>
+                        CSS3 inherently supports responsive design, and is 
+                        equipped to handle media queries. Media queries are calls made by the 
+                        code to determine what device and size screen a user is viewing the site on.
+                        This adds a whole new responsive design capability to the CSS reportoire.
+                    </p>
+                    <div>
+                        <h5>Other CSS3 modules include:</h5>
+
+                        <ul>
+                            <li>
+                                Selectors: Developers can edit elements by name, class, type, attribute, and more.
+                            </li>
+
+                            <li>
+                                The Box Model module: This describes an approach to creating consistency between HTML
+                                elements on a page, or “boxes.” By applying margins, borders, and padding to a box’s content,
+                                developers can clear area around an element, give it borders, and more.
+                            </li>
+
+                            <li>
+                                Backgrounds and borders: With better control of the treatments of element borders and page
+                                backgrounds, CSS3 also enables rounded corners on boxes and drop shadows. Before CSS3,
+                                backgrounds had to be achieved with images, which added to a page’s file size and load time.
+                            </li>
+
+                            <li>
+                                Text effects: CSS3 includes shadow effects, text overflow (which hides text that gets too long for
+                                its element), word breaking (automatically breaking text so it fits within a box), and text
+                                wrapping–all things that save designers lots of formatting time.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <h4>3. Web font support gives designers access to way more than just “web safe” fonts</h4>
+                    <p>
+                        Before CSS3, designers could only use “web safe” fonts to be 100 percent sure that the fonts
+                        would always display the same on everyone’s machine. Web safe fonts are fonts that every
+                        single computer has installed and recognizes. If a designer used common fonts like Times New
+                        Roman or Arial, they could pretty much guarantee that any user would view their site as it was
+                        intended. However, if they wanted to use a rarer font, if it wasn’t supported by a user’s machine,
+                        it would default back to a web safe font.
+                    </p>
+
+                    <h4>4. It enables faster development, and faster load times</h4>
+                    <p>
+                        What used to require background images, CSS3 can now achieve with visual enhancements,
+                        which saves developers time in production. This cuts down on calls and load times for
+                        numerous images because these effects are all built into the code. Also, pages load faster
+                        thanks to overall smaller file sizes and fewer calls. 
+                    </p>
+
+                    <h4>5. Create 2D and 3D transformations, animations, and transitions</h4>
+                    <p>
+                        These effects allow elements on a page to rotate, grow, shrink, flip, or translate into a differentcolor. For the first time, elements created in CSS can move on screen without requiring any
+                        JavaScript or Flash code. With transitions, an element can seamlessly change size and color.
+                        You can set a duration for a transition, e.g. creating a button that slowly expands and changes
+                        color when you mouse over it.
+                    </p>
+
+                    <h4>6. New colors and image effects</h4>
+                    <p>
+                        CSS3 supports new colors (RGBA, HSL, HSLA) and gradient colors, and allows for adjustments
+                        to opacity. Another biggie is its support of rounded image corners, an effect that required a lot of
+                        formatting and Photoshop work to achieve before.
+                    </p>
+
+                    <h4>7. Box-sizing has fixed some annoying alignment problems</h4>
+                    <p>
+                        Box-sizing allows developers to get the sizing of elements right without having to subtract
+                        dimensions for padding and borders. With the box-sizing property, the padding and border are
+                        included in the height and width.
+                    </p>
+                </div>
             </article>
-        
-    
+            <p class="publish-date">March 20,2020 : 7:34 PM</p>
         </section>
 
     </div>
 
 
-
-
-
+    <footer></footer>
+    
 </body>
 </html>
