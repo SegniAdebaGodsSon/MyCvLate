@@ -3,21 +3,55 @@
 body {
     background: #333;
     color: white;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
 }
 a{
     text-decoration: none;
 }
 
-nav ul {
-    list-style-type: none;
+nav a{
+    color: rgb(90, 255, 75)
+    
+}
+
+nav li:hover{
+    background: rgb(96, 255, 96);
+    color: rgb(175, 2, 109);
+    
+}
+
+nav li:hover a{
+    color: rgb(175, 2, 109);
 }
 nav ul li{
     display: inline;
+    list-style-type: none;
+    padding: 0 17px;
+    
 }
 
-#main-container{
-    
-    width: 90%;
+
+header {
+    overflow: auto;
+    position: relative;
+    margin-bottom: 100px;
+}
+header h1{
+    color: rgb(90, 255, 75);
+    margin-bottom: 80px;
+}
+
+#contact-table {
+    margin: auto;
+}
+#contact-table h1,#contact-table h3{
+    margin: auto;
+    text-align: center;
+    border-bottom: solid #FFF 2px;
+    width: 40%;
+    margin-bottom: 30px;
 }
 
 
@@ -25,9 +59,10 @@ nav ul li{
     border-bottom: solid white 3px; 
     padding-bottom: 40px;
     float: left;
-    position: relative;
-    width: 300px;
-    right:0px; 
+    font-size: 34px;
+    position: absolute;
+    right: 10%;
+    
 }
 
 
@@ -62,11 +97,43 @@ footer p {
 
 }
 footer div {
+    border-top: solid #FFF 3px;
+    padding-top: 20px;
     margin: auto;
-    width: 100px;
+    margin-top: 80px;
+    width: 120px;
 }
 
 footer img{
     width: 15px;
     height: 15px;
+}
+
+
+.main-container-blog {
+    width: 80%;
+    margin: auto;
+}
+
+.main-container-blog section{
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.main-container-blog article
+{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.publish-date
+{
+    font-size: 15px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#ul-1 li::first-line{
+    font-weight: bold;
 }
