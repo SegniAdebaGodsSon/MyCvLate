@@ -1,4 +1,7 @@
-
+#main-container {
+    width: 90%;
+    margin: auto;
+}
 
 body {
     background: #333;
