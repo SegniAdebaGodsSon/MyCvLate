@@ -1,0 +1,71 @@
+
+
+body {
+    background: #333;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+}
+
+#main-container{
+    
+    width: 90%;
+}
+
+#header-text{
+    border-bottom: solid white 3px; 
+    padding-bottom: 40px;
+    float: left;
+    position: relative;
+    width: 300px;
+    right:0px; 
+}
+
+
+#header-image{
+    float: left;
+}
+
+#header-image img{
+    border-radius: 50%;
+    height: 300px;
+    width: 350px;
+}
+
+header{
+    padding-bottom: 40px;
+    border-bottom: solid #FFF 3px;
+}
+
+#hobbies, #work-experience, #top-skills {
+    
+    padding-bottom: 30px;
+    border-bottom: solid #FFF 3px;
+}
+#main-body{
+    margin: auto;
+    width: 80;
+    
+}
+
+footer p {
+    text-align: center;
+
+}
+footer div {
+    margin: auto;
+    width: 100px;
+}
+
+footer img{
+    width: 15px;
+    height: 15px;
+}
