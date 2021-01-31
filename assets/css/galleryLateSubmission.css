@@ -1,0 +1,101 @@
+html, body{
+    height:100%;
+    width:100%;
+    position:relative;
+    overflow: hidden;
+}
+  
+.gallery{
+    position:relative;
+    width: 730px;
+    margin: 0 auto;
+}
+
+.shadow{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    width: 500px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(rgb(40, 115, 33),rgba(0,0,0,0) 70%);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.clipped-border{
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    padding:5px;
+    background:linear-gradient(rgb(31, 74, 27),rgb(90, 255, 75));
+    max-height:250px;
+    max-width:250px;
+    transition:transform 0.5s;
+    position:absolute;
+    cursor:pointer;
+}
+
+
+/* the hover effect*/
+.clipped-border:before{
+    content:'';
+    position:absolute;
+    opacity:0.5;
+    width:400px;
+    height:100px;
+    background:white;
+    top:0;
+    left:0;
+    z-index:1;
+    transform: translate(0%, 15%) rotate(45deg);
+    transition:transform 0.5s;
+}
+
+.clipped-border:hover:before{
+    transform: translate(-200px,450%) rotate(45deg);
+    transition:transform 0.5s;
+}
+
+.clipped-border{
+    width: 400px;
+    height: 400px;
+}
+
+.clipped-border:nth-child(1){
+top: 0;
+left: 0;
+}
+
+.clipped-border:nth-child(2){
+top:0;
+left:235px;
+}
+
+.clipped-border:nth-child(3){
+left:470px;
+}
+
+.clipped-border:nth-child(4){
+top:195px;
+left:117px;
+}
+
+.clipped-border:nth-child(5){
+top:195px;
+left:352px;
+}
+
+#clipped {
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.clipped-border:hover{
+    transform:scale(1.2);
+    transition:transform 0.4s;
+    z-index:10;
+}
+
+
+  

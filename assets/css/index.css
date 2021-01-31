@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 #main-container {
     width: 90%;
     margin: auto;
@@ -8,42 +13,54 @@ body {
     color: white;
     font-size: 20px;
     line-height: 28px;
-    text-align: justify;
 }
 a{
     text-decoration: none;
 }
 
+#nav-bar{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1em;
+}
+
+#header-image{
+    grid-column: 1 / 2;
+}
+
+#header-text{
+    grid-column: 2 / 3;
+}
+
+#header-text h1{
+    margin: 30px;
+}
+
 nav a{
-    color: rgb(90, 255, 75)
-    
+    color: rgb(90, 255, 75)    
 }
 
 nav li:hover{
-    background: rgb(96, 255, 96);
-    color: rgb(175, 2, 109);
-    
+    background: rgb(96, 255, 96);    
 }
 
 nav li:hover a{
-    color: rgb(175, 2, 109);
+    color: rgb(0, 0, 0);
 }
 nav ul li{
-    display: inline;
-    list-style-type: none;
-    padding: 0 17px;
     
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 10px;
 }
 
 
 header {
-    overflow: auto;
-    position: relative;
     margin-bottom: 100px;
 }
 header h1{
     color: rgb(90, 255, 75);
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 }
 
 #contact-table {
@@ -60,23 +77,16 @@ header h1{
 
 #header-text{
     border-bottom: solid white 3px; 
-    padding-bottom: 40px;
-    float: left;
-    font-size: 34px;
-    position: absolute;
-    right: 10%;
-    
+    /* padding-bottom: 40px; */
+    font-size: 25px;
 }
 
 
-#header-image{
-    float: left;
-}
 
 #header-image img{
     border-radius: 50%;
-    height: 300px;
-    width: 350px;
+    height: 200px;
+    width: 250px;
 }
 
 
@@ -90,28 +100,6 @@ header h1{
     width: 80;
     
 }
-
-footer p {
-    text-align: center;
-    border-top: solid #FFF 2px ;
-    border-bottom: solid #FFF 2px ;
-    padding: 20px 0 ;
-
-
-}
-footer div {
-    border-top: solid #FFF 3px;
-    padding-top: 20px;
-    margin: auto;
-    margin-top: 80px;
-    width: 120px;
-}
-
-footer img{
-    width: 15px;
-    height: 15px;
-}
-
 
 .main-container-blog {
     width: 80%;
@@ -139,4 +127,18 @@ footer img{
 
 #ul-1 li::first-line{
     font-weight: bold;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+footer .first{
+    
+}
+
+footer .second{
+
 }
