@@ -1,6 +1,8 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+
 }
 
 #main-container {
@@ -131,14 +133,87 @@ header h1{
 
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    padding: 2em 2em;
+    background-color: black;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+footer li,p{
+    list-style: none;
+    font-size: 16px;
+    color: grey;
+    min-width: 30px;
+}
+
+footer .column-one h5{
+    margin-bottom: 2em;
 }
 
 footer .first{
-    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 2em;
+}
+
+footer .column-one{
+    display: grid;
+    column-gap: 1em;
+    grid-column: 1 / 2;
+    grid-template-columns: repeat(4, 1fr);
+    border-right: dotted 1px grey;
+    padding-right: 1em;
+}
+
+.column-one .col-1{
+    grid-column: 1 / 2;
+}
+
+.column-one .col-2{
+    grid-column: 2 / 3;
+}
+
+.column-one .col-3{
+    grid-column: 3 / 4;
+}
+
+.column-one .col-4{
+    grid-column: 4 / 5;
+}
+
+footer .column-two{
+    display: grid;
+    grid-column: 2 / 3;
+    column-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+}
+.column-two img{
+    max-width: 150px;
+    max-height: 30px;
+    padding-left: 2em;
+}
+
+.column-two h5{
+    margin-bottom: 1em;
+}
+
+.column-two input{
+    margin: 1em 0;
+}
+
+.column-two .col2-1{
+    grid-column: 1 / 2;
+}
+
+.column-two .col2-2{
+    grid-column: 2 / 3;
 }
 
 footer .second{
+    display: flex;
+}
 
+
+.r2-col2{
+    margin-left: auto;
 }

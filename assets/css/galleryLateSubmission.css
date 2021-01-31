@@ -2,12 +2,13 @@ html, body{
     height:100%;
     width:100%;
     position:relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
   
 .gallery{
     position:relative;
     width: 730px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -99,3 +100,6 @@ left:352px;
 
 
   
+footer{
+    margin-top: 800px;
+}
