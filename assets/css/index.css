@@ -156,6 +156,51 @@ footer .first{
     margin-bottom: 2em;
 }
 
+@media only screen and (max-width: 860px){
+    footer .first{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .first .column-one{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        border:none;
+    }
+
+    .first .column-two{
+        margin-top: 1em;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
+
+@media only screen and (max-width: 477px){
+    footer .first{
+        height: 850px;
+    }
+    footer .first .column-one{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .first .column-two{
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    }
+    
+    footer .second{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .second .r2-col2{
+        
+    }
+}
+
 footer .column-one{
     display: grid;
     column-gap: 1em;
