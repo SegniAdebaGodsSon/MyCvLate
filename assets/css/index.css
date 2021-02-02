@@ -139,11 +139,16 @@ footer {
     width: 100%;
 }
 
-footer li,p{
+footer li{
     list-style: none;
     font-size: 16px;
     color: grey;
     min-width: 30px;
+}
+
+footer p{
+    font-size: 16px;
+    color: grey;
 }
 
 footer .column-one h5{

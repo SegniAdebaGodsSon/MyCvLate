@@ -54,10 +54,6 @@ img{
     transition:transform 0.5s;
 }
 
-.clipped-border:hover:before{
-    transform: translate(-200px,450%) rotate(45deg);
-    transition:transform 0.5s;
-}
 
 .clipped-border{
     width: 400px;
@@ -92,14 +88,7 @@ left:352px;
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 
-.clipped-border:hover{
-    transform:scale(1.2);
-    transition:transform 0.4s;
-    z-index:10;
-}
 
-
-  
 footer{
     margin-top: 800px;
 }

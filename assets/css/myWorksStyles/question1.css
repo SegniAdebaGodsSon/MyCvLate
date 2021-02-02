@@ -1,0 +1,54 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) max-content;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header header header"
+      "menu main . sidebar"
+      "menu main . ."
+      "menu main . ."
+      "footer footer footer footer";
+  }
+
+
+.header{
+    grid-area: header;
+    text-align: center;
+    background-color: yellow;
+}  
+
+.menu{
+    grid-area: menu;
+}
+
+
+.main{
+    grid-area: main;
+    padding-left: 1em;
+    border-left: 3px green solid;
+}
+
+.sidebar{
+    text-align: right;
+    grid-area: sidebar;
+    padding: 0.5em;
+    border: dashed 3px green;
+}
+
+.footer{
+    text-align: center;
+    grid-area: footer;
+}
