@@ -15,12 +15,9 @@ body{
     background-color: var(--black);
 }
 
-
-
 p{
     font-size: 27px;
     font-family: sans-serif;
-    
 }
 
 .calculator{
@@ -93,24 +90,30 @@ body>p{
 .add{
     top: 5px;
     right: 270px;
+    z-index: -1;
 }
 
 .times{
     right: 190px;
     top: 550px;
+    z-index: -1;
 }
 
 .divide{
     top: 450px;
     left: 200px;
+    z-index: -1;
 }
 
 .minus{
     top: 10px;
     left: 300px;
+    z-index: -1;
+
 }
 
 .equals{
     top: 700px;
     left: 20px;
+    z-index: -1;
 }
