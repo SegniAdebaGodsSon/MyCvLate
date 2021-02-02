@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    
+    <title>Blog</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <style>
+    section h1{
+        color:greenyellow ;
+    }
+    section {
+        font-family: sans-serif;
+        border: solid greenyellow 0.5px;
+    }
+    section:hover{
+        background: rgba(30, 47, 3, 0.83); 
+        /* box-shadow: rgb(45, 73, 4) 30px 30px 100px ;  */
+    }
+    
+    </style>
+</head>
+<body>
+
+    <div id="main-container">
+        <header>
+        
+            <div id="nav-bar">
+                <div id="header-image">
+                    <img src="./assets/Images/profile.jpg" height="300" width="410" alt="Bruno Fernandes">
+                </div>   
+    
+                <div id="header-text">
+                    <h1>Segni Adeba</h1>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a> 
+                            </li>
+                            <li>
+                                <a href="gallery.html">Gallery</a> 
+                            </li>
+                            <li>
+                                <a href="gallery2.html">Gallery-2(exercise)</a> 
+                            </li>
+                            <li>
+                                <a href="gallery(late).html">Gallery(Late Submission)</a> 
+                            </li>
+                            <li>
+                                <a href="blog.html"> Blog</a> 
+                            </li>
+                            <li>
+                                <a href="blog(late).html">Blog(Late)</a>
+                            </li>
+
+                            <li>
+                                <a href="myWorks.html">My Works</a>
+                            </li>
+                            
+                        </ul>
+                                
+                    </nav>
+                </div>
+            </div>
+        
+    </header>
+    
+        <div class="main-container-blog">
+    
+            <section>
+                <h1>Difference between Pseudo Elements and Pseudo Class Selectors (source: <a href="https://developer.mozilla.org">Mozilla Developer</a>)</h1><br>
+                <article>
+                    <p>A CSS <strong>pseudo-element</strong> is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, ::first-line can be used to change the font of the first line of a paragraph. Pseudo-classes let you apply a style to an element not only in relation to the content of the document tree, but also in relation to external factors like the history of the navigator (:visited, for example), the status of its content (like :checked on certain form elements), or the position of the mouse (like :hover, which lets you know if the mouse is over an element or not).
+                    </p><br>
+
+                    <p>
+                        <strong>In contrast to pseudo-classes, pseudo-elements can be used to style a specific part of an element.</strong>
+                    </p><br>
+
+                    <p>
+                        A CSS <strong>pseudo-element</strong> is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, ::first-line can be used to change the font of the first line of a paragraph.
+                    </p>
+                    <p>
+                        You can use only one pseudo-element in a selector. It must appear after the simple selectors in the statement.
+                    </p><br>
+                    <p>
+                        As a rule, double colons (::) should be used instead of a single colon (:). This distinguishes pseudo-classes from pseudo-elements. However, since this distinction was not present in older versions of the W3C spec, most browsers support both syntaxes for the original pseudo-elements
+                    </p><br>
+
+                    <p><strong>In contrast to pseudo-elements, pseudo-classes can be used to style an element based on its state.</strong></p>
+                </article>
+                <br>
+                <p class="publish-date">February 2,2021 : 10:12 AM</p>
+            </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <section>
+                <h1>Demo How Grid Layout  Works in CSS3 (source: <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">css-tricks</a>)</h1><br>
+                <article>
+                    <p>
+                        CSS Grid Layout (aka “Grid”), is a two-dimensional grid-based layout system that aims to do nothing less than completely change the way we design grid-based user interfaces. CSS has always been used to lay out our web pages, but it’s never done a very good job of it. First, we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox helped out, but it’s intended for simpler one-dimensional layouts, not complex two-dimensional ones (Flexbox and Grid actually work very well together). Grid is the very first CSS module created specifically to solve the layout problems we’ve all been hacking our way around for as long as we’ve been making websites.
+                    </p><br>
+
+                    <p>
+                        To get started you have to define a container element as a grid with <strong>display: grid</strong>, set the column and row sizes with <strong>grid-template-columns</strong> and <strong>grid-template-rows</strong>, and then place its child elements into the grid with <strong>grid-column</strong> and <strong>grid-row</strong>. Similarly to flexbox, the source order of the grid items doesn’t matter. Your CSS can place them in any order, which makes it super easy to rearrange your grid with media queries. Imagine defining the layout of your entire page, and then completely rearranging it to accommodate a different screen width all with only a couple lines of CSS. Grid is one of the most powerful CSS modules ever introduced.
+                    </p><br>
+
+                    <h1 style="text-align: center;">Properties for the Parent (Grid Container)</h1>
+                    <p>
+                        <h1>display</h1>
+                        <p>Defines the element as a grid container and establishes a new grid formatting context for its contents.<br><br><strong>Values:</strong></p>
+                        <ul style="list-style: none;">
+                            <li><strong>grid - </strong>generates a block-level grid</li>
+                            <li><strong>inline-grid- </strong>generates an inline-level grid</li>
+                        </ul>
+                        <img src="./assets/Images/blog2/Screenshot 2021-02-02 102625.png" alt="">
+                    </p>
+                    <br>
+                    <p>
+                        <h1>grid-template-columns<br>
+                            grid-template-rows</h1><br>
+
+                        <p>Defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.<br><br><strong>Values:</strong></p>
+
+                        <ul style="list-style: none;">
+                            <li><strong><-track-size-> – </strong>can be a length, a percentage, or a fraction of the free space in the grid (using the <strong>fr</strong> unit)</li>
+                            <li><strong><-line-name-> – </strong>an arbitrary name of your choosing</li>
+                        </ul>
+                        <img src="./assets/Images/blog2/Screenshot 2021-02-02 102717.png" alt="">
+                    </p><br><br>
+
+                    <h1 style="text-align: center;">Properties for the Children (Grid Items)</h1><br><br>
+                    
+                    <p>
+                        <h1>grid-column-start <br>
+                            grid-column-end <br>
+                            grid-row-start <br>
+                            grid-row-end</h1>
+
+                        <p>Determines a grid item’s location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the item begins, and grid-column-end/grid-row-end is the line where the item ends. <br>Values:</p>
+                        <ul style="list-style: none;">
+                            <li><strong><-track-size-> – </strong>can be a number to refer to a numbered grid line, or a name to refer to a named grid line</li>
+                            <li><strong>span <-number-> – </strong>the item will span across the provided number of grid tracks</li>
+                            <li><strong>span <-name-> – </strong>the item will span across until it hits the next line with the provided name</li>
+                            <li><strong>auto – </strong>indicates auto-placement, an automatic span, or a default span of one</li>
+                        </ul>
+                        <img src="./assets/Images/blog2/Screenshot 2021-02-02 105651.png" alt="">
+                    </p>
+
+                    <p>
+                        <p><strong>Examples:</strong></p>
+                        <p><img src="./assets/Images/blog2/Screenshot 2021-02-02 110351.png" alt="" "></p>
+                        <p><img src="./assets/Images/blog2/Screenshot 2021-02-02 110441.png" alt=""></p>
+                        
+                        <p>If no grid-column-end/grid-row-end is declared, the item will span 1 track by default.
+                            Items can overlap each other. You can use z-index to control their stacking order.</p>
+                    </p>
+                    
+                    
+                </article><br>
+                <p class="publish-date">February 2,2021 : 10:12 AM</p>
+            </section>
+    
+    
+    
+    
+    
+            
+            <section>
+                <h1>Difference between Grid Layout and Flex Layout(source: <a href="https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/">css-tricks</a>)</h1><br><br>
+
+                <article>
+                    
+                    <p>
+                        <h1>Flexbox can optionally wrap.</h1><br>
+                        <p>
+                            If we allow a flex container to wrap, they will wrap down onto another row when the flex items fill a row. Where they line up on the next row is independent of what happenned on the first row, allowing for a masonry-like look.
+                        </p>
+                        <img src="./assets/Images/blog2/Screenshot 2021-02-02 111807.png" alt="">
+                    </p> <br><br>
+
+                    <p>
+                        <h1>You could think of grid as “two dimensional“</h1><br>
+                        <p>
+                            In that we can (if we want to) declare the sizing of rows and columns and then explicitly place things into both rows and columns as we choose.
+                        </p>
+                        <img src="./assets/Images/blog2/Screenshot 2021-02-02 112009.png" alt="">
+                    </p><br><br>
+
+                    <p>
+                        <p>Grid is mostly <strong>defined on the parent element</strong>. In flexbox, most of the layout (beyond the very basics) happen on the children.</p>
+                        <img src="./assets/Images/blog2/Screenshot 2021-02-02 114943.png" alt="">
+                    </p><br><br>
+
+
+                     
+                    <p>
+                        <h1>Grid is better at overlapping.</h1><br>
+                        <p>
+                            Getting elements to overlap in flexbox requires looking at traditional stuff, like negative margins, transforms, or absolute positioning in order to break out of the flex behavior. With grid, we can place items on overlapping grid lines, or even right within the same exact grid cells.
+                        </p>
+                    </p>
+                    
+                </article>
+                <p class="publish-date">March 19,2020 : 5:04 PM</p>
+            </section>
+    
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="first">
+            <div class="column-one">
+                <div class="col-1">
+                    <h5>ANATEK YAPI</h5>
+                    <ul>
+                        <li>Hakkimizda</li>
+                        <li>Killanim Sartian</li>
+                        <li>gizililik likeleri</li>
+                        <li>Ileism</li>
+                    </ul>     
+                </div>
+        
+                <div class="col-2">
+                    <h5>HIZMETLERIMIZ</h5>
+                    <ul>
+                        <li>Iskele Kurulum ve Solum</li>
+                        <li>Saris ve kiralama</li>
+                        <li>Denetieme</li>
+                        <li>Danismanlik</li>
+                    </ul>
+                </div>
+        
+                <div class="col-3">
+                    <h5>BLOG</h5>
+                    <ul>
+                        <li>Harberler</li>
+                        <li>Dosyalar</li>
+                    </ul>
+                </div>
+        
+                <div class="col-4">
+                    <h5>ILETISM</h5>
+                    <ul>
+                        <li>Itetisim Biligilleri</li>
+                        <li>Referanslar</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="column-two">
+                <div class="col2-1">
+                    <img src="assets/Images/play_store.png" alt="">
+                    <img src="assets/Images/Available_on_the_App_Store_(black).png" alt="">
+                </div>
+    
+                <div class="col2-2">
+                    <h5>HABER LISTESI</h5>
+                    <input type="text" placeholder="e-posta adresiniz">
+                    <p>Bize guvenerek vermis okdugunuz e-posta adresine hicbir kosulda spam yaplmayacaktir</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="second">
+            <div class="r2-col1">
+                <h5>GIZLILIK ILKELERL  LULLANIM SARTALARI ILETISM</h5>
+                <p>
+                    &copy; 2015, ANATEK YAPI I Tum Haldan Saldadr <br>
+                    Bu sayfa uzerdine yer afan hicbir gorsel yazh materyal izizn alnmadan kullanalamaz
+                </p>
+            </div>
+    
+            <div class="r2-col2">
+                <img src="assets/Images/umayajans.png" alt="">
+            </div>
+        </div>
+    
+    </footer>
+    
+</body>
+</html>

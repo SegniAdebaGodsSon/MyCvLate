@@ -81,7 +81,7 @@ p{
 
 body>p{
     position: absolute;
-    color: rgba(84, 84, 84, 0.1);
+    color: rgba(84, 84, 84, 0.3);
     font-size: 300px;
     font-weight: lighter;
     font-family: sans-serif;
@@ -89,31 +89,40 @@ body>p{
 
 .add{
     top: 5px;
-    right: 270px;
+    right: 20%;
     z-index: -1;
 }
 
 .times{
-    right: 190px;
-    top: 550px;
+    top: 700px;
+    right: 10%;
     z-index: -1;
 }
 
 .divide{
     top: 450px;
-    left: 200px;
+    left: 10%;
     z-index: -1;
 }
 
 .minus{
     top: 10px;
-    left: 300px;
+    left: 20%;
     z-index: -1;
 
 }
 
 .equals{
     top: 700px;
-    left: 20px;
+    left: 15%;
     z-index: -1;
+}
+
+.keys{
+    background-color:  rgba(84, 84, 84, 0.3);
+}
+
+.keys div p{
+    margin-right: 1px;
+    margin-top: 1px;
 }
